@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPhotoDeportivo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvModeloDeportivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivPhotoDeportivo"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFabricanteDeportivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fabricante"
+        android:drawableStart="@drawable/outline_directions_car_24"
+        android:drawablePadding="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/tvModeloDeportivo"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPaisDeportivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pais"
+        android:drawableStart="@drawable/outline_outlined_flag_24"
+        android:drawablePadding="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvFabricanteDeportivo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
