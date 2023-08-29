@@ -12,7 +12,13 @@ class DeportivoViewHolder(private val binding: ItemDeportivoBinding) : RecyclerV
         with(binding) {
             tvModeloDeportivo.text = deportivo.modelo
             tvFabricanteDeportivo.text = deportivo.fabricante
-            tvPaisDeportivo.text = deportivo.pais
+
+            Glide.with(ivPaisDeportivo.context)
+                .load(deportivo.bandera)
+                .centerCrop()
+                .error(R.drawable.baseline_error_outline_24)
+                .into(ivPaisDeportivo)
+
             Glide.with(imPhotoDeportivo.context)
                 .load(deportivo.photo)
                 .centerCrop()

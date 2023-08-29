@@ -9,5 +9,6 @@ data class Deportivo(
     val modelo: String,
     val fabricante: String,
     val pais: String,
-    val photo: String
+    val photo: String,
+    val bandera: String
 ) : Parcelable
