@@ -1,10 +1,10 @@
-package com.desafiolatam.myapplication.adapter
+package com.desafiolatam.recyclerviewsdeportivos.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.desafiolatam.myapplication.R
-import com.desafiolatam.myapplication.databinding.ItemDeportivoBinding
-import com.desafiolatam.myapplication.model.Deportivo
+import com.desafiolatam.recyclerviewsdeportivos.R
+import com.desafiolatam.recyclerviewsdeportivos.databinding.ItemDeportivoBinding
+import com.desafiolatam.recyclerviewsdeportivos.model.Deportivo
 
 class DeportivoViewHolder(private val binding: ItemDeportivoBinding) : RecyclerView.ViewHolder(binding.root) {
 

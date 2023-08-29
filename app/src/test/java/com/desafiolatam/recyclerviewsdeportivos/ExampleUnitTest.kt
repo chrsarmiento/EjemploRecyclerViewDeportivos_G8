@@ -1,4 +1,4 @@
-package com.desafiolatam.myapplication
+package com.desafiolatam.recyclerviewsdeportivos
 
 import org.junit.Test
 

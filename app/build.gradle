@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.desafiolatam.myapplication'
+    namespace 'com.desafiolatam.recyclerviewsdeportivos'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.desafiolatam.myapplication"
+        applicationId "com.desafiolatam.recyclerviewsdeportivos"
         minSdk 30
         targetSdk 33
         versionCode 1

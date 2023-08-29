@@ -1,13 +1,13 @@
-package com.desafiolatam.myapplication
+package com.desafiolatam.recyclerviewsdeportivos
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.desafiolatam.myapplication.adapter.DeportivoAdapter
-import com.desafiolatam.myapplication.databinding.ActivityMainBinding
-import com.desafiolatam.myapplication.model.Deportivo
-import com.desafiolatam.myapplication.model.DeportivosRepository
+import com.desafiolatam.recyclerviewsdeportivos.adapter.DeportivoAdapter
+import com.desafiolatam.recyclerviewsdeportivos.databinding.ActivityMainBinding
+import com.desafiolatam.recyclerviewsdeportivos.model.Deportivo
+import com.desafiolatam.recyclerviewsdeportivos.model.DeportivosRepository
 
 class MainActivity : AppCompatActivity() {
 

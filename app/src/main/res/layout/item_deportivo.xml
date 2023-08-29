@@ -41,6 +41,7 @@
                 android:textStyle="bold"
                 android:ellipsize="end"
                 android:padding="10dp"
+                android:gravity="center"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@id/imPhotoDeportivo"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -50,6 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Fabricante"
+                android:gravity="center"
                 android:textSize="16dp"
                 android:textStyle="normal"
                 android:ellipsize="end"

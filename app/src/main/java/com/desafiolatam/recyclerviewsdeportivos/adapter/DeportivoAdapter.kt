@@ -1,10 +1,10 @@
-package com.desafiolatam.myapplication.adapter
+package com.desafiolatam.recyclerviewsdeportivos.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.desafiolatam.myapplication.databinding.ItemDeportivoBinding
-import com.desafiolatam.myapplication.model.Deportivo
+import com.desafiolatam.recyclerviewsdeportivos.databinding.ItemDeportivoBinding
+import com.desafiolatam.recyclerviewsdeportivos.model.Deportivo
 
 class DeportivoAdapter(private val deportivoList: List<Deportivo>, private val onClick: (Deportivo) -> Unit) : RecyclerView.Adapter<DeportivoViewHolder>() {
 

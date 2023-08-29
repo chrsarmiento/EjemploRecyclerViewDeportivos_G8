@@ -1,11 +1,11 @@
-package com.desafiolatam.myapplication
+package com.desafiolatam.recyclerviewsdeportivos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.bumptech.glide.Glide
-import com.desafiolatam.myapplication.databinding.ActivityDetailBinding
-import com.desafiolatam.myapplication.model.Deportivo
+import com.desafiolatam.recyclerviewsdeportivos.databinding.ActivityDetailBinding
+import com.desafiolatam.recyclerviewsdeportivos.model.Deportivo
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
@@ -19,7 +19,7 @@ class DetailActivity : AppCompatActivity() {
         val deportivo = bundle?.getParcelable<Deportivo>("DEPORTIVO")
 
         if (deportivo != null) {
-            Log.i("INformacion",deportivo.modelo)
+            Log.i("Informacion",deportivo.modelo)
         }
 
         binding.run {
@@ -27,6 +27,18 @@ class DetailActivity : AppCompatActivity() {
                 tvModeloDeportivo.text = modelo
                 tvFabricanteDeportivo.text = fabricante
                 tvPaisDeportivo.text = pais
+
+                Glide.with(applicationContext)
+                    .load(bandera)
+                    .centerCrop()
+                    .error(R.drawable.baseline_error_outline_24)
+                    .into(ivBanderaDeportiva)
+
+                Glide.with(applicationContext)
+                    .load(logoFabricante)
+                    .centerInside()
+                    .error(R.drawable.baseline_error_outline_24)
+                    .into(ivLogoDeportivo)
 
                 Glide.with(applicationContext)
                     .load(photo)
